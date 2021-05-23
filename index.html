@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
-  </link>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+  <title>Simple Sidebar</title>
+  <!-- Always load 3rd party styles before your styles -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -12,40 +12,51 @@
 
     <div class="navBar">
 
-      <h2> <span class="fab fa-bootstrap"></span> Sidebar</h2>
+      <h2 class="sidebarHeader"> 
+        <span class="navBar__icon fab fa-bootstrap"></span> 
+        <span>Sidebar</span>
+      </h2>
 
-      <hr>
+      <hr class="navBar__separator">
 
-      <ul>
-        <li class="navBar__navItems navBar--blue";>
-
-          <a href="#"><span class="fas fa-home"></span> Home</a>
+      <ul class="navbar__navItemList">
+        <li class="navBar__navItems navBar--blue">
+          <a class="navBar__link" href="#">
+            <span class="navBar__icon fas fa-home"></span>
+            <span>Home</span>
+          </a>
         </li>
 
         <li class="navBar__navItems">
-
-          <a href="#"><span class="fas fa-tachometer-alt"></span> Dashboard</a>
+          <a class="navBar__link" href="#">
+            <span class="navBar__icon fas fa-tachometer-alt"></span>
+            <span>Dashboard</span>
+          </a>
         </li>
 
         <li class="navBar__navItems">
-
-          <a href="#"> <span class="fas fa-th"></span> Orders</a>
+          <a class="navBar__link" href="#">
+            <span class="navBar__icon fas fa-th"></span>
+            <span>Orders</span>
+          </a>
         </li>
 
         <li class="navBar__navItems">
-          <a href="#"> <i class="fab fa-product-hunt"></i> Product</a>
+          <a class="navBar__link" href="#"> 
+            <span class="navBar__icon fab fa-product-hunt"></span>
+            <span>Product</span>
+          </a>
         </li>
 
         <li class="navBar__navItems">
-          <a href="#"><span class="fas fa-user"></span> Customers</a>
+          <a class="navBar__link" href="#">
+            <span class="navBar__icon fas fa-user"></span>
+            <span>Customers</span>
+          </a>
         </li>
 
       </ul>
-
     </div>
-
-
-
   </div>
 </body>
 
