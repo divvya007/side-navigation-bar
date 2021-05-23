@@ -4,63 +4,78 @@ body {
   margin: 0%;
 }
 body {
-  font-family: var(--bs-font-sans-serif);
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   line-height: 1.5;
 }
 
 .mainContainer {
-  border: 2px solid black;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   box-sizing: border-box;
 }
+
 .navBar {
-  border: 2px solid black;
   background-color: #212529;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   width: 280px;
-  padding: 1rem !important;
+  padding: 16px;
   box-sizing: border-box;
 }
 
+.navbar__navItemList {
+  /* 0 is always a 0 and not 0px or 0% */
+  padding: 0;
+}
+
+/* Group similar styles */
 .navBar__navItems {
   list-style-type: none;
-  /* padding: 10%; */
   cursor: pointer;
   align-self: center;
 }
-h2 {
-  color: #ffffff;
-  /* align-self: center; */
-  padding-left: 10px;
+
+.navBar__navItems:hover {
+  border-radius: 4px;
 }
-a {
+
+/* 
+  Never apply styles directly on the global tags, 
+  use classes instead
+*/
+.sidebarHeader {
+  color: #ffffff;
+  padding-left: 10px;
+  font-weight: normal;
+  margin-top: 0;
+}
+/* Group similar styles */
+.sidebarHeader:hover {
+  cursor: pointer;
+}
+
+.navBar__link {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
 }
-li:hover {
-  /* background-color: #0d6efd; */
-  border-radius: 0.25rem;
-}
-h2:hover {
-  cursor: pointer;
-}
-hr {
-  margin: 0rem 0px;
+
+.navBar__separator {
+  width: 100%;
+  margin: 16px 0;
   color: inherit;
   opacity: 0.25;
 }
 
-ul {
-  padding: 0%;
-}
 .navBar--blue {
   background-color: #0d6efd;
-  border-radius: 0.25rem;
+  border-radius: 4px;
+}
+
+.navBar__icon{
+  margin-right: 8px;
 }
